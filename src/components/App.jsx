@@ -1,5 +1,4 @@
 import React from 'react';
-import Form from './Form.jsx';
 
 var App = () => (
   <div>
@@ -8,7 +7,11 @@ var App = () => (
       Response goes here!
     </p>
     <div>
-      <Form />
+      <form action="#" id="form" method="post">
+        Name: <input type="text" name="username" id="username" />
+        Message: <input type="text" name="message" id="message" />
+        <input type="submit" name="submit" value="Send Message" />
+      </form>
     </div>
   </div>
 );
